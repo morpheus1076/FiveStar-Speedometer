@@ -22,14 +22,15 @@ Citizen.CreateThread(function()
                     end) 
                     OneHide = false
                 end
-                local VehicleDamageSource = GetEntityHealth(playerVehicle)
-                local VehicleDamage = math.ceil(VehicleDamageSource / 10)
+                local VehicleDamageSource = GetVehicleBodyHealth(playerVehicle)
+                local VehicleDamage = math.floor(VehicleDamageSource / 10)
+                local motor = math.floor(GetVehicleEngineHealth(playerVehicle)/10)
                 local vehicleFuel = math.floor(GetVehicleFuelLevel(playerVehicle))
                 local VehicleEngine = GetIsVehicleEngineRunning(playerVehicle)
                 local VehicleLock = GetVehicleDoorLockStatus(playerVehicle)
                 local VehicleSpeedSource = GetEntitySpeed(playerVehicle)
                 local VehicleSpeed = math.ceil(VehicleSpeedSource * 3.6)
-                local _, VehicleLight = GetVehicleLightsState(playerVehicle)
+                local VehicleLight = GetVehicleDashboardLights(playerVehicle)
                 local VehicleEngineSpeed = GetVehicleCurrentRpm(playerVehicle) or VehicleSpeed
                 WaitSleep = false
                 SendNUIMessage({
@@ -42,7 +43,8 @@ Citizen.CreateThread(function()
                     Lock = VehicleLock,
                     Engine = VehicleEngine,
                     Seatbelt = Seat_belt,
-                    EngineSpeed = VehicleEngineSpeed
+                    EngineSpeed = VehicleEngineSpeed,
+                    Enginehealth = motor
                 })
             end
         else

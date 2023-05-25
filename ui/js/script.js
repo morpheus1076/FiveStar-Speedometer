@@ -14,6 +14,7 @@ window.addEventListener("message", (event) => {
                 $("#speed speed").text(event.data.Speed);
                 $("#damage").text(event.data.Damage);
                 $("#fuel").text(event.data.Fuel);
+                $("#edamage").text(event.data.Enginehealth);
 
                 if (reload === 1) {
                     setTimeout(() => {
@@ -29,7 +30,7 @@ window.addEventListener("message", (event) => {
                 }
 
                 if (event.data.Engine) {
-                    $("#motor_icon").css("filter", "none");
+                    $("#motor_icon").css("filter", "invert(13%) sepia(66%) saturate(7463%) hue-rotate(45deg) brightness(102%) contrast(110%)");
                 } else {
                     $("#motor_icon").css("filter", "invert(13%) sepia(66%) saturate(7463%) hue-rotate(358deg) brightness(102%) contrast(110%)");
                 }
@@ -41,14 +42,18 @@ window.addEventListener("message", (event) => {
                 }
 
                 if (event.data.Lock == 2) {
-                    $("#doors_icon").css("filter", "none");
+                    $("#doors_icon").css("filter", "invert(13%) sepia(66%) saturate(7463%) hue-rotate(45deg) brightness(102%) contrast(110%)");
                 } else {
                     $("#doors_icon").css("filter", "invert(13%) sepia(66%) saturate(7463%) hue-rotate(358deg) brightness(102%) contrast(110%)");
                 }
-                if (event.data.Light) {
-                    $("#light_icon").css("filter", "invert(13%) sepia(66%) saturate(7463%) hue-rotate(358deg) brightness(102%) contrast(110%)");
+
+                if (event.data.Light == 128) {
+                    $("#light_icon").css("filter", "invert(13%) sepia(66%) saturate(7463%) hue-rotate(45deg) brightness(102%) contrast(110%)");
+                } 
+                if (event.data.Light == 256) {
+                    $("#light_icon").css("filter", "invert(13%) sepia(66%) saturate(7463%) hue-rotate(90deg) brightness(102%) contrast(110%)");
                 } else {
-                    $("#light_icon").css("filter", "none");
+                    $("#light_icon").css("filter", "invert(13%) sepia(66%) saturate(7463%) hue-rotate(358deg) brightness(102%) contrast(110%)");
                 }
 
                 var EngineSource = (event.data.EngineSpeed * 15).toFixed(2);
@@ -106,8 +111,7 @@ window.addEventListener("message", (event) => {
                 } else {
                     $("data9").css("background-color", "rgba(54,72,17,0.502)");
                 }
-        
-        
+              
                 if (EngineSource >= 8) {
                     $("data10").css("background-color", "rgba(18,155,18,1)");
                 } else {

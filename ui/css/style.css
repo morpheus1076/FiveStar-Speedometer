@@ -28,16 +28,16 @@ body {
 	width: 16.146vw;
 	height: 3.073vw;
 	left: 82.76vw;
-	bottom: 3.15vw;
+	bottom: 1.15vw;
 	overflow: visible;
 }
 
 #green {
 	position: absolute;
-	width: 8.49vw;
-	height: 2.5vw;
-	left: 0.26vw;
-	top: 0.573vw;
+	width: 4.40vw;
+	height: 0.8vw;
+	left: 6.00vw;
+	top: 0.2vw;
 	overflow: visible;
 }
 
@@ -45,19 +45,19 @@ body {
 	background-color: rgba(21, 150, 41, 1);
 	position: absolute;
 	overflow: visible;
-	width: 0.469vw;
-	height: 2.5vw;
+	width: 0.3vw;
+	height: 0.8vw;
 	left: 0vw;
 	border-radius: 0.208vw;
-	top: 0vw;
+	top: 0.6vw;
 }
 
 #red {
 	position: absolute;
 	width: 5.208vw;
-	height: 3.073vw;
-	left: 10.938vw;
-	top: 0vw;
+	height: 1.200vw;
+	left: 12.700vw;
+	top: 0.2vw;
 	overflow: visible;
 }
 
@@ -66,8 +66,8 @@ body {
 	background-color: rgba(156, 36, 36, 1);
 	overflow: visible;
 	border-radius: 0.208vw;
-	width: 0.521vw;
-	height: 3.073vw;
+	width: 0.3vw;
+	height: 1.400vw;
 	left: 0vw;
 	top: 0vw;
 }
@@ -75,9 +75,9 @@ body {
 #yellow {
 	position: absolute;
 	width: 1.927vw;
-	height: 2.396vw;
-	left: 8.75vw;
-	top: 0.677vw;
+	height: 0.8vw;
+	left: 11.00vw;
+	top: 0.3vw;
 	overflow: visible;
 }
 
@@ -86,10 +86,10 @@ body {
 	background-color: rgba(252, 243, 27, 1);
 	overflow: visible;
 	border-radius: 0.208vw;
-	width: 0.469vw;
-	height: 2.396vw;
+	width: 0.3vw;
+	height: 1.1vw;
 	left: 0vw;
-	top: 0vw;
+	top: 0.2vw;
 }
 
 #DataUp {
@@ -99,24 +99,24 @@ body {
 }
 
 #speed {
-	left: 82.76vw;
-	bottom: 6.5vw;
+	left: 88.00vw;
+	bottom: 3.7vw;
 	position: absolute;
 	overflow: visible;
-	width: 10.573vw;
-	height: 3.438vw;
+	width: 8.573vw;
+	height: 2.438vw;
 	text-align: left;
 	font-family: Goldman;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 2.865vw;
+	font-size: 2.065vw;
 	color: rgb(177, 177, 177);
 	text-shadow: 0vw 0.152vw 0.204vw rgb(0, 0, 0);
 }
 
 #fuel {
-	left: 96.51vw;
-	bottom: 7.22vw;
+	left: 88.80vw;
+	bottom: 1.7vw;
 	position: absolute;
 	overflow: visible;
 	width: 1.042vw;
@@ -125,13 +125,14 @@ body {
 	font-family: Inter;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 0.521vw;
+	font-size: 0.721vw;
 	color: rgba(255, 255, 255, 1);
+	text-shadow: 0vw 0.152vw 0.204vw rgb(0, 0, 0);
 }
 
 #damage {
-	left: 93.906vw;
-	bottom: 7.22vw;
+	left: 91.5vw;
+	bottom: 1.6vw;
 	position: absolute;
 	overflow: visible;
 	width: 1.042vw;
@@ -140,8 +141,25 @@ body {
 	font-family: Inter;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 0.521vw;
+	font-size: 0.621vw;
 	color: rgba(255, 255, 255, 1);
+	text-shadow: 0vw 0.152vw 0.204vw rgb(0, 0, 0);
+}
+
+#edamage {
+	left: 94.15vw;
+	bottom: 1.6vw;
+	position: absolute;
+	overflow: visible;
+	width: 1.042vw;
+	height: 0.625vw;
+	text-align: right;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.691vw;
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 0vw 0.152vw 0.204vw rgb(0, 0, 0);
 }
 
 #line_vector {
@@ -149,25 +167,25 @@ body {
 	width: 11.276vw;
 	height: 0.718vw;
 	left: 87.63vw;
-	bottom: 6.22vw;
+	bottom: 3.70vw;
 	overflow: visible;
 }
 
 #damage_icon {
 	position: absolute;
-	width: 1.563vw;
-	height: 1.563vw;
-	left: 94.948vw;
-	bottom: 7vw;
+	width: 0.9vw;
+	height: 0.9vw;
+	left: 90.60vw;
+	bottom: 1.5vw;
 	overflow: visible;
 }
 
 #fuel_icon {
 	position: absolute;
-	width: 1.354vw;
-	height: 1.485vw;
-	left: 97.552vw;
-	bottom: 7vw;
+	width: 1.154vw;
+	height: 1.285vw;
+	left: 87.500vw;
+	bottom: 1.5vw;
 	overflow: visible;
 }
 
@@ -182,26 +200,26 @@ body {
 
 #motor_icon {
 	position: absolute;
-	width: 1.823vw;
-	height: 1.351vw;
-	left: 0vw;
-	top: 0vw;
+	width: 1.000vw;
+	height: 0.850vw;
+	left: 10.0vw;
+	top: 0.2vw;
 	overflow: visible;
 }
 
 #doors_icon {
 	position: absolute;
-	width: 1.406vw;
-	height: 1.406vw;
-	left: 4.792vw;
-	top: 0vw;
+	width: 0.7vw;
+	height: 0.4vw;
+	left: 13.5vw;
+	top: 0.5vw;
 	overflow: visible;
 }
 
 #seatbelt_icon {
 	position: absolute;
-	width: 1.51vw;
-	height: 1.51vw;
+	width: 0.0vw;
+	height: 0.0vw;
 	left: 14.115vw;
 	top: 0vw;
 	overflow: visible;
@@ -209,9 +227,9 @@ body {
 
 #light_icon {
 	position: absolute;
-	width: 1.927vw;
-	height: 1.344vw;
-	left: 9.323vw;
-	top: 0vw;
+	width: 0.7vw;
+	height: 0.4vw;
+	left: 14.8vw;
+	top: 0.5vw;
 	overflow: visible;
 }
